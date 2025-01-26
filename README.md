@@ -63,14 +63,31 @@ https://youtu.be/e5Hq2peVeJA?si=4gG6-XcyusqK5L4i
 To run this project locally, make sure you have:
 - 💻 A modern web browser.
 - 🌐 Internet connection.
-- 🐍 Python (if backend is included).
 
 ---
 
 ## 🚀 Features
-- 🔍 Search functionality for products.
-- 🛒 Add-to-cart system.
-- 📄 View and manage customer and product data.
+Administrator Features:
+
+Product Management: Add, view, update, and delete products.
+
+Category Management: Add, view, update, and delete product categories.
+
+Order Management: View all orders placed by customers.
+
+User Management: View, activate, or deactivate customer accounts.
+
+Customer Features:
+
+User Authentication: Registration, login, and logout.
+
+Product Browsing: View products by category, search by name, and sort by price.
+
+Shopping Cart: Add products to the cart, update quantities, and remove products.
+
+Order Placement: Place orders and view order history.
+
+User Profile Management: Update personal information and password.
 
 ---
 
@@ -82,8 +99,7 @@ To run this project locally, make sure you have:
 ---
 
 ## 🤝 Contributing
-We welcome contributions from the community! Feel free to fork the repository and submit a pull request. 💡
-
+This project was solely contributed to by me. 🚀 If you're interested in enhancing it or adding features
 ---
 
 ## 📄 License
