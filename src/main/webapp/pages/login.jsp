@@ -20,9 +20,9 @@
             justify-content: center;
             align-items: center;
         }
-
+        /*hhhh*/
         .login-box {
-            border: 2px solid #6a0dad;
+            border: 2px solid #e6a80f;
             border-radius: 15px;
             padding: 30px;
             background-color: white;
@@ -30,7 +30,7 @@
         }
 
         .login-title {
-            color: #6a0dad;
+            color: #e6a80f;
             font-weight: bold;
             text-align: center;
             margin-bottom: 20px;
@@ -41,19 +41,19 @@
         }
 
         .login-btn {
-            background-color: #6a0dad;
+            background-color: #e6a80f;
             color: white;
             border: none;
             width: 100%;
         }
 
         .login-btn:hover {
-            background-color: #5a0cad;
+            background-color: #e6a80f;
         }
 
         .back-btn {
             font-size: 24px;
-            color: #6a0dad;
+            color: #e6a80f;
             cursor: pointer;
         }
 
