@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f5f5f5;
+            background-color: #ffffff;
         }
 
         .manage-title {
@@ -60,6 +60,8 @@
         }
     </style>
 </head>
+
+
 <body>
 <a href="/E_Commerce_war_exploded/manageCustomers?message=" class="back-btn">&larr;</a>
 <div class="container mt-5">
