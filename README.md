@@ -69,25 +69,17 @@ To run this project locally, make sure you have:
 ## 🚀 Features
 Administrator Features:
 
-Product Management: Add, view, update, and delete products.
-
-Category Management: Add, view, update, and delete product categories.
-
-Order Management: View all orders placed by customers.
-
-User Management: View, activate, or deactivate customer accounts.
-
+🛠️ Product Management: Add, view, update, and delete products.
+📂 Category Management: Add, view, update, and delete product categories.
+📦 Order Management: View all orders placed by customers.
+👥 User Management: View, activate, or deactivate customer accounts.
 Customer Features:
 
-User Authentication: Registration, login, and logout.
-
-Product Browsing: View products by category, search by name, and sort by price.
-
-Shopping Cart: Add products to the cart, update quantities, and remove products.
-
-Order Placement: Place orders and view order history.
-
-User Profile Management: Update personal information and password.
+📝 User Authentication: Registration, login, and logout.
+🛍️ Product Browsing: View products by category, search by name, and sort by price.
+🛒 Shopping Cart: Add products to the cart, update quantities, and remove products.
+📦 Order Placement: Place orders and view order history.
+🧑‍💻 User Profile Management: Update personal information and password.
 
 ---
 
