@@ -2,6 +2,11 @@ package lk.ijse.ecommerce.dao;
 
 import lk.ijse.ecommerce.dao.custom.impl.*;
 
+/*The `DAOFactory` class provides a method to obtain specific DAO implementations based on the type provided.
+It uses an enum `Type` to represent different DAO types (like `CART`, `CATEGORIES`, `ORDERS`, etc.).
+The `getDAO` method returns the corresponding DAO implementation (`CartDAOImpl`, `CategoriesDAOImpl`, etc.)
+based on the `Type` passed in, allowing for easy access to various data operations in the system.*/
+
 public class DAOFactory {
 
     public enum Type {

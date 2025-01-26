@@ -16,7 +16,7 @@ public class SetAdminUser implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         if (checkIsAdmin() == null) {
-            Users users = new Users("Administrator","admin@gmail.com",0,"admin","Admin","123",new ArrayList<>());
+            Users users = new Users("Administrator","admin@gmail.com",0,"admin","Admin","619",new ArrayList<>());
             saveAdmin(users);
         }
     }
@@ -30,6 +30,10 @@ public class SetAdminUser implements ServletContextListener {
         transaction.commit();
         session.close();
     }
+
+    /*The `SetAdminUser` listener checks if an "Admin" user exists when the application starts.
+    If not, it creates a default admin user and saves it in the database using Hibernate.
+    It ensures the admin account is available at initialization.*/
 
     private Users checkIsAdmin(){
         Session session = FactoryConfiguration.getSession();

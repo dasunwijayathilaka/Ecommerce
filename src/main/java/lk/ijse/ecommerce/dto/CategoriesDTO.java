@@ -20,3 +20,7 @@ public class CategoriesDTO {
         this.products = products;
     }
 }
+/*The `CategoriesDTO` class represents a category in the e-commerce system.
+ It includes fields for `categoryId`, `categoryName`, and a list of `Products`.
+  Lombok annotations generate constructors,
+getters, setters, and `toString` methods, simplifying data handling.*/

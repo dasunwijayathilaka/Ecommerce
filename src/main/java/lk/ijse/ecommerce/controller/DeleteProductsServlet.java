@@ -17,6 +17,9 @@ public class DeleteProductsServlet extends HttpServlet {
 
     DeleteProductsBO deleteProductsBO = (DeleteProductsBO) BOFactory.getBO(BOFactory.Type.DELETEPRODUCTS);
 
+    /*This servlet (`DeleteProductsServlet`) handles the deletion of products in an e-commerce application.
+     It retrieves product details (ID, name, description, quantity, price, and category) from the HTTP request, creates a `ProductsDTO` object, and calls the business layer (`DeleteProductsBO`) to delete the product.
+     After the operation, it redirects the user based on the outcome (success or failure).*/
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int productId = Integer.parseInt(req.getParameter("search"));

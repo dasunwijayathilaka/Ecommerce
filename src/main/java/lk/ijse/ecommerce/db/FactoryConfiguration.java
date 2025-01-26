@@ -11,6 +11,12 @@ public class FactoryConfiguration {
 //    @Resource(name = "jdbc/pool")
 //    private static DataSource dataSource;
 
+    /*The `FactoryConfiguration` class configures Hibernate for database interaction.
+    It initializes a `SessionFactory` with properties for MySQL dialect, SQL visibility,
+    and auto schema update. The class adds entity classes like `Cart`, `Categories`, `Products`, etc.,
+     and provides a method (`getSession()`) to retrieve a new Hibernate session.
+     This setup is essential for managing database connections and transactions in a Hibernate-based application.*/
+
     static {
         try {
 //            InitialContext ctx = new InitialContext();

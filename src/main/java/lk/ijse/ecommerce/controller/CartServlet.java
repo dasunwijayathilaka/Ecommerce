@@ -20,6 +20,10 @@ public class CartServlet extends HttpServlet {
 
     CartBO cartBO = (CartBO) BOFactory.getBO(BOFactory.Type.CART);
 
+    /*This servlet (`CartServlet`) manages cart-related operations in an e-commerce application.
+     It handles retrieving and displaying cart and product details (`GET`) and processes order placements from JSON input (`POST`).
+     Successful actions redirect to the home page, while failures show error messages.*/
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {

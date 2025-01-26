@@ -32,3 +32,6 @@ public class GetCategoriesNamesServlet extends HttpServlet {
         }
     }
 }
+/*This servlet (`GetCategoriesNamesServlet`) handles retrieving category names for an e-commerce application.
+It calls the business layer (`GetCategoriesNamesBO`) to fetch the category names, then converts the result into a JSON array.
+The response is sent back in JSON format, allowing the client-side to consume the data.*/

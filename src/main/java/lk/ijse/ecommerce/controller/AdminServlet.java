@@ -15,6 +15,10 @@ public class AdminServlet extends HttpServlet {
 
     AdminBO adminBO = (AdminBO) BOFactory.getBO(BOFactory.Type.ADMIN);
 
+    /*This servlet handles administrator login by verifying credentials using the AdminBO object.
+    It checks username and password, redirects to a customer management page on success,
+    or back to the login page with an error message on failure or exception.*/
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {

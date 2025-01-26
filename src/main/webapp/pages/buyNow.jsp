@@ -8,6 +8,11 @@
   Time: 8:24 PM
   To change this template use File | Settings | File Templates.
 --%>
+
+<%--This JSP page displays a product order form, showing product details, price, and quantity.
+It includes a "Buy Now" button, checks if the user is logged in before submitting,
+ and calculates the subtotal, discount, and total for the order.--%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>

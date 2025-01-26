@@ -16,6 +16,10 @@ public class AddToCartServlet extends HttpServlet {
 
     AddToCartBO addToCartBO = (AddToCartBO) BOFactory.getBO(BOFactory.Type.ADDTOCART);
 
+    /*This servlet manages the "Add to Cart" process in an e-commerce application.
+ It receives product details via a POST request, uses a business object (BO) for cart operations,
+  creates a data transfer object (DTO), and redirects based on success or failure.*/
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int productId = Integer.parseInt(req.getParameter("productId"));

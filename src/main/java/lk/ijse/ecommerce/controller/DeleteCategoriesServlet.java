@@ -15,6 +15,10 @@ import java.io.IOException;
 public class DeleteCategoriesServlet extends HttpServlet {
 
     DeleteCategoriesBO deleteCategoriesBO = (DeleteCategoriesBO) BOFactory.getBO(BOFactory.Type.DELETECATEGORIES);
+/*This servlet (`DeleteCategoriesServlet`) handles category deletion in an e-commerce application.
+ It retrieves the category ID and name from the HTTP request,
+ creates a `CategoriesDTO` object, and calls the business layer (`DeleteCategoriesBO`) to delete the category.
+ Afterward, it redirects based on success or failure.*/
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

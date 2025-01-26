@@ -17,3 +17,6 @@ public class CartDTO {
         this.quantity = quantity;
     }
 }
+/*The `CartDTO` class represents a cart item in an e-commerce system,
+ with fields for `cartId`, `productId`, and `quantity`. Lombok annotations auto-generate constructors,
+ getters, setters, and `toString` methods, simplifying object management and data transfer.*/

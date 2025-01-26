@@ -8,6 +8,12 @@
   Time: 5:58 PM
   To change this template use File | Settings | File Templates.
 --%>
+
+<%--This JSP page implements a responsive shopping cart. It displays products with checkboxes,
+ allowing users to increase/decrease quantities, and dynamically updates the subtotal and total.
+ It validates user login before checkout,
+ collecting selected products for order submission.--%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>

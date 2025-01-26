@@ -98,3 +98,6 @@ public class CategoriesDAOImpl implements CategoriesDAO {
         return categoriesName;
     }
 }
+/*The `CategoriesDAOImpl` class implements the `CategoriesDAO` interface using Hibernate.
+It provides methods for retrieving, saving, updating, deleting categories, and fetching category names.
+ Each operation handles database transactions and session management for reliable data handling.*/

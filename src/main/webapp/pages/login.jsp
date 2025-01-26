@@ -5,6 +5,9 @@
   Time: 6:00 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%--This HTML code creates a stylish login page with a gradient background.
+ It features a centered login form with fields for username and password, a submit button, and a back button.
+The layout adapts to smaller screens with responsive design.--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>

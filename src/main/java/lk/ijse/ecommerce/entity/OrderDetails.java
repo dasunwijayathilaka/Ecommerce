@@ -10,6 +10,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class OrderDetails {
+
+    /*The `OrderDetails` class links products to orders,
+    containing fields like `orderDetailsId`, `quantity`, and foreign keys to `Products` and `Orders`.
+    It establishes many-to-one relationships with these entities using JPA annotations,
+    simplifying database operations and management.*/
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int orderDetailsId;

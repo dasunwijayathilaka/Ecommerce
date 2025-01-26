@@ -14,6 +14,9 @@ import java.io.IOException;
 public class BuyNowServlet extends HttpServlet {
 
     BuyNowBO buyNowBO = (BuyNowBO) BOFactory.getBO(BOFactory.Type.BUYNOW);
+/*This servlet (BuyNowServlet) processes "Buy Now" requests in an e-commerce application.
+It retrieves product ID, quantity, and total price from the HTTP request,
+ calls the business layer (BuyNowBO) to save the order, and redirects users based on success or failure.*/
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
