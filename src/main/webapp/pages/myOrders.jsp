@@ -20,7 +20,7 @@
     <style>
         /* General Body Styling */
         body {
-            background: linear-gradient(135deg, #f8f9fa, #e6e6e6);
+            background: linear-gradient(135deg, #00b4d8, #0077b6, #023e8a); /* Gradient with teal, blue, and deep navy */
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;

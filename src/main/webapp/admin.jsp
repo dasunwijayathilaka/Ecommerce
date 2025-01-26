@@ -14,15 +14,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            background: linear-gradient(135deg, #64748b, #1e293b); /* Gradient colors */
+            background: linear-gradient(135deg, #00b4d8, #0077b6, #023e8a); /* Gradient with teal, blue, and deep navy */
             height: 100vh;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center; /* Centers the form on the screen */
-            position: relative; /* Allows absolute positioning of the back button */
+            position: relative;
+            font-family: 'Arial', sans-serif;
+            transition: background-color 0.3s ease;
         }
-
 
         .login-box {
             width: 600px; /* Width of the form */
@@ -35,6 +36,9 @@
             justify-content: center;
             align-items: center;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            animation: fadeIn 1s ease-in-out;
         }
 
         .login-title {
@@ -42,10 +46,23 @@
             font-weight: bold;
             text-align: center;
             margin-bottom: 20px;
+            font-size: 28px;
         }
 
         .form-control {
             background-color: #eaeaea;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-control:focus {
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            outline: none;
         }
 
         .login-btn {
@@ -53,23 +70,67 @@
             color: white;
             border: none;
             width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .login-btn:hover {
-            background-color: #e6a80f;
+            background-color: #d99b0e;
+            transform: scale(1.05);
         }
 
         .back-btn {
             font-size: 24px;
             color: #e6a80f;
             cursor: pointer;
-        }
-
-        .back{
+            position: absolute;
             top: 2%;
             left: 2%;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: #d99b0e;
+            transform: translateX(-5px);
+        }
+
+        /* Animation for the login box */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive design for mobile */
+        @media (max-width: 768px) {
+            .login-box {
+                width: 90%;
+                height: auto;
+            }
+
+            .login-title {
+                font-size: 24px;
+            }
+
+            .form-control {
+                font-size: 14px;
+            }
+
+            .login-btn {
+                font-size: 16px;
+                padding: 12px;
+            }
         }
     </style>
+
 </head>
 <body>
 <!-- Main Container -->

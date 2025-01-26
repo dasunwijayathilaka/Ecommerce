@@ -16,7 +16,7 @@
     <style>
         /* General Body Styling */
         body {
-            background: linear-gradient(135deg, #f7f7f7, #eaeaea); /* Subtle gradient for a clean look */
+            background: linear-gradient(135deg, #00b4d8, #0077b6, #023e8a); /* Gradient with teal, blue, and deep navy */
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
@@ -191,21 +191,24 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
-    <a class="navbar-brand text-purple fw-bold" href="#">E-Commerce</a>
+    <a class="navbar-brand" href="#">
+        <img src="images/ecomlogo.jpg" alt="Logo" style="width: 40px; height: 40px; margin-right: 10px;">
+        I-Dealz
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link" href="manageCustomers?message=">View Customers</a>
+                <a class="nav-link" href="manageCustomers?message=">Customers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/E_Commerce_war_exploded/viewOrders">View Orders</a>
+                <a class="nav-link" href="/E_Commerce_war_exploded/viewOrders">Orders</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="manageProductsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Manage Products
+                     Products
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="manageProductsDropdown">
                     <li><a class="dropdown-item" href="pages/saveProducts.jsp">Add Products</a></li>
@@ -216,7 +219,7 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="manageCategoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Manage Categories
+                    Categories
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="manageCategoriesDropdown">
                     <li><a class="dropdown-item" href="pages/saveCategories.jsp">Add Categories</a></li>

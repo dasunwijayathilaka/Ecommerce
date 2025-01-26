@@ -14,30 +14,63 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #00b4d8, #0077b6, #023e8a); /* Gradient with teal, blue, and deep navy */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease-in-out;
         }
 
         .manage-title {
             color: #e6a80f;
             font-weight: bold;
             margin-bottom: 20px;
+            font-size: 28px;
+            animation: fadeIn 1s ease-in-out;
         }
 
         .form-control {
             background-color: #eaeaea;
+            border: 1px solid #ccc;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #e6a80f;
+            box-shadow: 0 0 5px rgba(230, 168, 15, 0.6);
+            outline: none;
         }
 
         .table thead {
             background-color: #e6a80f;
             color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .table tbody tr:hover {
+            background-color: #f2f2f2;
+            cursor: pointer;
+            transform: scale(1.02);
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
         .btn-primary {
             background-color: #e6a80f;
             border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .btn-primary:hover {
+            background-color: #d99b0e;
+            transform: scale(1.05);
             opacity: 0.9;
         }
 
@@ -48,8 +81,26 @@
             position: absolute;
             top: 2%;
             left: 2%;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: #d99b0e;
+            transform: translateX(-5px);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
+
 </head>
 <body>
 <a href="/E_Commerce_war_exploded/manageCustomers?message=" class="back-btn">&larr;</a>

@@ -17,7 +17,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #EEEEEE;
+            background: linear-gradient(135deg, #00b4d8, #0077b6, #023e8a); /* Gradient with teal, blue, and deep navy */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease-in-out;
         }
 
         .order-card {
@@ -25,12 +29,23 @@
             border-radius: 10px;
             padding: 15px;
             margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .order-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .order-card img {
             width: 100%;
             max-width: 100px;
             border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .order-card img:hover {
+            transform: scale(1.1);
         }
 
         .order-summary {
@@ -39,11 +54,13 @@
             padding: 10px 15px;
             font-size: 0.9rem;
             background-color: #f8f9fa;
+            transition: background-color 0.3s ease;
         }
 
         .order-summary h6 {
             font-size: 1rem;
             margin-bottom: 10px;
+            font-weight: bold;
         }
 
         .btn-buy {
@@ -51,20 +68,31 @@
             color: white;
             border-radius: 5px;
             width: 100%;
+            padding: 12px;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .btn-buy:hover {
-            background-color: #e6a80f;
+            background-color: #d99b0e;
+            transform: scale(1.05);
         }
 
         .back-btn {
             font-size: 24px;
             color: #e6a80f;
             cursor: pointer;
-        }
-        .back{
+            position: absolute;
             top: 2%;
             left: 2%;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: #d99b0e;
+            transform: translateX(-5px);
         }
 
         .description {
@@ -73,23 +101,34 @@
             padding: 5px;
             resize: none;
             border: none;
+            font-size: 0.9rem;
         }
 
+        /* Media Query for Responsive Layout */
         @media (max-width: 768px) {
             .order-summary {
                 max-width: 100%;
             }
 
             .order-card {
+                display: flex;
                 flex-wrap: wrap;
+                justify-content: center;
                 text-align: center;
             }
 
             .order-card img {
                 margin-bottom: 10px;
+                max-width: 80%;
+            }
+
+            .btn-buy {
+                font-size: 1rem;
+                padding: 10px;
             }
         }
     </style>
+
 </head>
 <body>
 <div class="container mt-5">

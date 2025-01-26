@@ -15,7 +15,7 @@
     <style>
         /* Body Styles */
         body {
-            background: linear-gradient(135deg, #f5f5f5, #eaeaea); /* Smooth gradient background */
+            background: linear-gradient(135deg, #00b4d8, #0077b6, #023e8a); /* Gradient with teal, blue, and deep navy */
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;

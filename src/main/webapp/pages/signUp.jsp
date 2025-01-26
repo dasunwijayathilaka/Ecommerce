@@ -31,6 +31,7 @@
             background-color: white;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             text-align: center; /* Center-align text and form */
+            animation: slideIn 1s ease-out;
         }
 
         .signup-title {
@@ -48,10 +49,16 @@
             border-radius: 5px;
             background-color: #eaeaea;
             font-size: 16px; /* Larger font size for inputs */
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #e6a80f;
+            box-shadow: 0 0 5px rgba(230, 168, 15, 0.6);
         }
 
         .signup-btn {
-            background-color: #e6a80f;
+            background: linear-gradient(135deg, #00b4d8, #0077b6, #023e8a); /* Gradient with teal, blue, and deep navy */
             color: white;
             border: none;
             width: 100%;
@@ -59,10 +66,12 @@
             border-radius: 5px;
             font-size: 18px; /* Larger button font */
             cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .signup-btn:hover {
             background-color: #d99b0e;
+            transform: scale(1.05);
         }
 
         .back-btn {
@@ -72,12 +81,26 @@
             position: absolute;
             top: 10px;
             left: 10px;
+            transition: transform 0.3s ease;
         }
 
         .back-btn:hover {
             color: #d99b0e;
+            transform: translateX(-5px);
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
+
 </head>
 <body>
 

@@ -12,16 +12,17 @@
   <style>
     /* Light Theme Styles (Default) */
     body {
-      background-color: #ffffff;
+      background: linear-gradient(135deg, #00b4d8, #0077b6, #023e8a); /* Gradient with teal, blue, and deep navy */
       transition: background-color 0.5s, color 0.5s;
     }
 
     .navbar {
-      background: linear-gradient(to right, #e4051f, #11d13b);
+      background: #000000;
+    /*  background: linear-gradient(to right, #e4051f, #11d13b);*/
     }
 
     .navbar a, .name-div {
-      color: white !important;
+      color: #ffffff !important;
     }
 
     .product-card {
@@ -267,11 +268,30 @@
 </nav>
 
 
-<div id="menu" class="menu">
-  <a href="/E_Commerce_war_exploded/myOrders"><button type="button" class="btn btn-outline-primary">My Orders</button></a>
-  <a href="/E_Commerce_war_exploded/myProfile"><button type="button" class="btn btn-outline-primary">Manage Account</button></a>
-  <a href="/E_Commerce_war_exploded/logOut"><button type="button" class="btn btn-outline-primary">Log Out</button></a>
+<div class="d-flex">
+  <!-- Sidebar -->
+  <div id="menu" class="bg-dark text-white p-4" style="width: 250px; height: 100vh;">
+    <h4 class="text-center mb-4 text-primary">Menu</h4>
+    <div class="list-group">
+      <a href="/E_Commerce_war_exploded/myOrders" class="list-group-item list-group-item-action text-white bg-dark border-0">
+        <button type="button" class="btn btn-outline-primary w-100">My Orders</button>
+      </a>
+      <a href="/E_Commerce_war_exploded/myProfile" class="list-group-item list-group-item-action text-white bg-dark border-0">
+        <button type="button" class="btn btn-outline-primary w-100">Manage Account</button>
+      </a>
+      <a href="/E_Commerce_war_exploded/logOut" class="list-group-item list-group-item-action text-white bg-dark border-0">
+        <button type="button" class="btn btn-outline-primary w-100">Log Out</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Content Area (to the right of sidebar) -->
+  <div class="flex-grow-1 p-4">
+    <!-- Main content will go here -->
+  </div>
 </div>
+
+
 
 
 
