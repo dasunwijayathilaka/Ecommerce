@@ -29,29 +29,29 @@
         .price {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #6a0dad;
+            color: #e6a80f;
         }
         .star-rating {
-            color: gold;
+            color: #e6a80f;
         }
         .btn-primary {
-            background-color: #007bff;
+            background-color: #05ffc5;
             border: none;
         }
         .btn-secondary {
-            background-color: #6a0dad;
+            background-color: #e6a80f;
             border: none;
         }
         .quantity-control button {
             border: 1px solid #000;
         }
         textarea {
-            border: 2px solid #6a0dad;
+            border: 2px solid #e6a80f;
             border-radius: 10px;
         }
         .back-btn {
             font-size: 24px;
-            color: #6a0dad;
+            color: #e6a80f;
             cursor: pointer;
         }
         .back{
