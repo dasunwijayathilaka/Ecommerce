@@ -28,7 +28,7 @@
         }
 
         .cart-card {
-            border: 2px solid #e6a80f;
+            border: 2px solid #11d13b;
             border-radius: 10px;
             padding: 15px;
             margin-bottom: 20px;
@@ -57,7 +57,7 @@
 
         .order-summary {
             background: #ffffff;
-            border: 2px solid #e6a80f;
+            border: 2px solid #04631a;
             border-radius: 10px;
             padding: 15px;
             color: black;
@@ -71,7 +71,7 @@
         }
 
         .checkout-btn {
-            background-color: #e6a80f;
+            background-color: #05ffc5;
             color: white;
             font-weight: bold;
             border: none;
@@ -82,7 +82,7 @@
         }
 
         .checkout-btn:hover {
-            background-color: #d8950e;
+            background-color: #8494af;
             transform: scale(1.05); /* Button hover animation */
         }
 
@@ -90,19 +90,19 @@
             border: none;
             background: none;
             font-size: 1.2rem;
-            color: #e6a80f;
+            color: #05ffc5;
             cursor: pointer;
             transition: color 0.3s ease, transform 0.3s ease;
         }
 
         .icon-btn:hover {
-            color: #d8950e;
+            color: #8494af;
             transform: scale(1.2); /* Icon hover animation */
         }
 
         .back-btn {
             font-size: 24px;
-            color: #e6a80f;
+            color: #05ffc5;
             cursor: pointer;
             position: absolute;
             top: 2%;
@@ -111,7 +111,7 @@
         }
 
         .back-btn:hover {
-            color: #d8950e;
+            color: #11d13b;
             transform: scale(1.1); /* Back button hover animation */
         }
 
@@ -136,7 +136,7 @@
 </head>
 <body>
 <div class="back d-flex justify-content-start mb-3 position-absolute">
-    <a href="/E_Commerce_war_exploded/index" class="back-btn">&larr;</a>
+    <a href="/E_Commerce_war_exploded/index" class="back-btn">×</a>
 </div>
 
 <div class="container mt-5">
@@ -178,7 +178,7 @@
                     </div>
                 </div>
                 <div class="mt-3 mt-md-0 text-center">
-                    <button class="icon-btn">🗑️</button>
+                    <button class="icon-btn"></button>
                 </div>
             </div>
             <%

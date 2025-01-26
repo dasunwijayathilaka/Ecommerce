@@ -23,7 +23,7 @@
         }
 
         .manage-title {
-            color: #e6a80f;
+            color: #000000;
             font-weight: bold;
             margin-bottom: 20px;
             font-size: 28px;
@@ -31,7 +31,7 @@
         }
 
         .table th {
-            background-color: #e6a80f;
+            background-color: #12b337;
             color: #fff;
             padding: 12px;
             text-align: left;
@@ -55,7 +55,7 @@
 
         .back-btn {
             font-size: 24px;
-            color: #e6a80f;
+            color: #05ffc5;
             cursor: pointer;
             position: absolute;
             top: 2%;
@@ -64,7 +64,7 @@
         }
 
         .back-btn:hover {
-            color: #d99b0e;
+            color: #0df140;
             transform: translateX(-5px);
         }
 
@@ -79,7 +79,6 @@
             }
         }
     </style>
-
 </head>
 <body>
 <a href="/E_Commerce_war_exploded/manageCustomers?message=" class="back-btn">&larr;</a>
@@ -98,16 +97,14 @@
             if (allCategories != null && !allCategories.isEmpty()) {
         %>
         <tbody>
-        <% for (CategoriesDTO categoriesDTO : allCategories) {%>
+        <% for (CategoriesDTO categoriesDTO : allCategories) { %>
         <tr>
-            <td><%=categoriesDTO.getCategoryId()%></td>
-            <td><%=categoriesDTO.getCategoryName()%></td>
+            <td><%= categoriesDTO.getCategoryId() %></td>
+            <td><%= categoriesDTO.getCategoryName() %></td>
         </tr>
-        <%}%>
+        <% } %>
         </tbody>
-        <%
-            }
-        %>
+        <% } %>
     </table>
 </div>
 

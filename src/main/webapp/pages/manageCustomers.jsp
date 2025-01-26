@@ -24,7 +24,7 @@
 
         /* Navbar Styling */
         .navbar {
-            border-bottom: 2px solid #e6a80f;
+            border-bottom: 2px solid #11d13b;
             padding: 10px 20px;
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -38,21 +38,21 @@
         }
 
         .navbar .dropdown-menu a {
-            color: #e6a80f;
+            color: #05ffc5;
             font-weight: 500;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .navbar .dropdown-menu a:hover {
             background-color: #f8f9fa;
-            color: #d8950e;
+            color: #29b347;
         }
 
         /* Header Styling */
         .header {
             font-size: 2.5rem;
             font-weight: bold;
-            color: #e6a80f;
+            color: #05ffc5;
             text-align: center;
             margin: 30px 0;
             animation: fadeIn 1s ease;
@@ -68,14 +68,14 @@
         }
 
         .form-control:focus, .search-container input:focus {
-            border-color: #e6a80f;
-            box-shadow: 0 0 8px rgba(230, 168, 15, 0.5);
+            border-color: #11d13b;
+            box-shadow: 0 0 8px rgb(20, 138, 46);
             outline: none;
         }
 
         .search-container button {
             border: none;
-            background-color: #e6a80f;
+            background-color: #ed5605;
             color: white;
             border-radius: 50%;
             padding: 10px 15px;
@@ -85,7 +85,7 @@
 
         .search-container button:hover {
             transform: scale(1.1); /* Slight zoom */
-            background-color: #d8950e;
+            background-color: #f36071;
         }
 
         /* Table Styling */
@@ -98,7 +98,7 @@
         }
 
         .table th {
-            background-color: #e6a80f;
+            background-color: #11d13b;
             color: white;
             font-size: 1rem;
             text-align: left;
@@ -129,7 +129,7 @@
 
         /* Buttons */
         .btn-primary {
-            background-color: #e6a80f;
+            background-color: #05ffc5;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -140,7 +140,7 @@
         }
 
         .btn-primary:hover {
-            background-color: #d8950e;
+            background-color: #11d13b;
             transform: scale(1.05);
         }
 

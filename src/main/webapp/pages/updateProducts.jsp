@@ -19,14 +19,28 @@
             margin: 0;
             padding: 0;
             transition: background-color 0.3s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background for the form */
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 900px;
         }
 
         .manage-title {
-            color: #e6a80f;
+            color: #000000;
             font-weight: bold;
             margin-bottom: 20px;
             font-size: 28px;
             animation: fadeIn 1s ease-in-out;
+            text-align: center;
         }
 
         .form-control, .form-select {
@@ -40,13 +54,13 @@
         }
 
         .form-control:focus, .form-select:focus {
-            border-color: #e6a80f;
-            box-shadow: 0 0 5px rgba(230, 168, 15, 0.6);
+            border-color: #11d13b;
+            box-shadow: 0 0 5px rgb(12, 124, 36);
             outline: none;
         }
 
         .table thead {
-            background-color: #e6a80f;
+            background-color: #06711f;
             color: white;
             transition: background-color 0.3s ease;
         }
@@ -59,7 +73,7 @@
         }
 
         .btn-primary {
-            background-color: #e6a80f;
+            background-color: #05ffc5;
             border: none;
             padding: 12px 20px;
             border-radius: 5px;
@@ -69,14 +83,30 @@
         }
 
         .btn-primary:hover {
-            background-color: #d99b0e;
+            background-color: #0cf43f;
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .btn-success {
+            background-color: #f6b40f;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-success:hover {
+            background-color: #4470f8;
             transform: scale(1.05);
             opacity: 0.9;
         }
 
         .back-btn {
             font-size: 24px;
-            color: #e6a80f;
+            color: #05ffc5;
             cursor: pointer;
             position: absolute;
             top: 2%;
@@ -85,10 +115,11 @@
         }
 
         .back-btn:hover {
-            color: #d99b0e;
+            color: #11f141;
             transform: translateX(-5px);
         }
 
+        /* Keyframes for Animations */
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -99,21 +130,43 @@
                 transform: translateY(0);
             }
         }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .manage-title {
+                font-size: 1.5rem;
+            }
+
+            .btn-primary,
+            .btn-success {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+
+            .back-btn {
+                font-size: 20px;
+            }
+
+            .container {
+                width: 90%;
+            }
+        }
     </style>
 
 </head>
 <body>
 <a href="/E_Commerce_war_exploded/manageCustomers?message=" class="back-btn">&larr;</a>
 <div class="container mt-4">
+    <h2 class="manage-title">Update Products</h2>
 
-    <h2 class="manage-title text-center">Update Products</h2>
-
-    <!-- Form Inputs -->
+    <!-- Search Form -->
     <div class="col-lg-8">
-        <form class="d-flex">
+        <form class="d-flex mb-4">
             <input class="form-control me-2" type="search" placeholder="Search" id="search-input">
             <button class="btn btn-primary" id="search-button" type="button">Search</button>
         </form>
+
+        <!-- Update Product Form -->
         <form action="/E_Commerce_war_exploded/updateProducts" method="post">
             <input class="form-control me-2" type="search" placeholder="Search" name="search" id="disable-search-input">
             <div class="mb-3">

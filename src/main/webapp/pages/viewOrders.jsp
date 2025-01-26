@@ -23,15 +23,16 @@
         }
 
         .manage-title {
-            color: #e6a80f;
+            color: #000000;
             font-weight: bold;
             margin-bottom: 20px;
             font-size: 28px;
             animation: fadeIn 1s ease-in-out;
+            text-align: center;
         }
 
         .table th {
-            background-color: #e6a80f;
+            background-color: #16aa36;
             color: #fff;
             padding: 12px;
             text-align: left;
@@ -55,7 +56,7 @@
 
         .back-btn {
             font-size: 24px;
-            color: #e6a80f;
+            color: #05ffc5;
             cursor: pointer;
             position: absolute;
             top: 2%;
@@ -64,12 +65,12 @@
         }
 
         .back-btn:hover {
-            color: #d99b0e;
+            color: #0cea3b;
             transform: translateX(-5px);
         }
 
         .manage-btn {
-            background-color: #e6a80f;
+            background-color: #05ffc5;
             color: white;
             padding: 12px 20px;
             border: none;
@@ -80,25 +81,27 @@
         }
 
         .manage-btn:hover {
-            background-color: #d99b0e;
+            background-color: #12e841;
             transform: scale(1.05);
         }
 
+        /* Transparent Box Style */
         .details-box {
-            background-color: #e9ecef;
-            padding: 15px;
-            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .details-box:hover {
             transform: scale(1.02);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
 
         .image-container img {
             max-width: 100%;
-            border-radius: 5px;
+            border-radius: 10px;
             transition: transform 0.3s ease;
         }
 
@@ -116,13 +119,37 @@
                 transform: translateY(0);
             }
         }
+
+        /* Centered Box */
+        .centered-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .product-card {
+                margin-bottom: 15px;
+            }
+
+            .manage-title {
+                font-size: 1.5rem;
+            }
+
+            .price {
+                font-size: 1rem;
+            }
+        }
+
     </style>
 
 </head>
 
 
 <body>
-<a href="/E_Commerce_war_exploded/manageCustomers?message=" class="back-btn">&larr;</a>
+<a href="/E_Commerce_war_exploded/manageCustomers?message=" class="back-btn">×</a>
 <div class="container mt-5">
     <div class="row mb-4">
         <div class="col-12 text-center">
@@ -159,7 +186,7 @@
                     if (allOrders != null && !allOrders.isEmpty()) {
                 %>
                 <tbody id="tblBody">
-                <% for (int i = 0;i < allOrders.size();i++) {
+                <% for (int i = 0; i < allOrders.size(); i++) {
                     for (int j = 0; j < allOrders.get(i).getOrderDetails().size(); j++) {
                 %>
                 <tr>
@@ -170,17 +197,17 @@
                     <td><%=allOrders.get(i).getOrderDetails().get(j).getProduct().getPrice() * allOrders.get(i).getOrderDetails().get(j).getQuantity()%></td>
                     <td><button class="btn btn-sm manage-btn" onclick="tblButtonClick(<%=i%>,<%=j%>)">Manage Button</button></td>
                 </tr>
-                <%}
-                }%>
+                <% }
+                } %>
                 </tbody>
                 <%
                     }
-                    assert allOrders != null;%>
+                %>
             </table>
         </div>
 
         <!-- Details Section -->
-        <div class="col-lg-4" id="visible-div">
+        <div class="col-lg-4 centered-box" id="visible-div">
             <div class="details-box mb-3">
                 <p id="order-id"><strong>Order ID:</strong> 001</p>
                 <p id="customer-id"><strong>Customer ID:</strong> C123</p>

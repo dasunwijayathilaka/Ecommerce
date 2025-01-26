@@ -23,15 +23,17 @@
         }
 
         .manage-title {
-            color: #e6a80f;
+            color: #000000;
             font-weight: bold;
             margin-bottom: 20px;
             font-size: 28px;
             animation: fadeIn 1s ease-in-out;
+            text-align: center;
         }
 
+        /* Table styling */
         .table th {
-            background-color: #e6a80f;
+            background-color: #159533;
             color: #fff;
             padding: 12px;
             text-align: left;
@@ -53,9 +55,10 @@
             transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
+        /* Back button */
         .back-btn {
             font-size: 24px;
-            color: #e6a80f;
+            color: #05ffc5;
             cursor: pointer;
             position: absolute;
             top: 2%;
@@ -64,16 +67,18 @@
         }
 
         .back-btn:hover {
-            color: #d99b0e;
+            color: #11d13b;
             transform: translateX(-5px);
         }
 
+        /* Product card styling */
         .product-card {
             border: 2px solid #e6a80f;
             border-radius: 10px;
             padding: 15px;
             background-color: white;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
         }
 
         .product-card:hover {
@@ -98,6 +103,7 @@
             margin-top: 10px;
         }
 
+        /* Keyframes for Animations */
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -108,20 +114,37 @@
                 transform: translateY(0);
             }
         }
-    </style>
 
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .product-card {
+                margin-bottom: 15px;
+            }
+
+            .manage-title {
+                font-size: 1.5rem;
+            }
+
+            .price {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
 <a href="/E_Commerce_war_exploded/manageCustomers?message=" class="back-btn">&larr;</a>
 
 <div class="container mt-5">
     <h2 class="manage-title text-center">View Products</h2>
+
     <%
         List<ProductsDTO> allProducts = (List<ProductsDTO>) request.getAttribute("products");
         if (allProducts != null && !allProducts.isEmpty()) {
     %>
+
+    <!-- Product Cards Layout -->
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <% for (ProductsDTO productsDTO : allProducts) {%>
+        <% for (ProductsDTO productsDTO : allProducts) { %>
         <div class="col">
             <div class="product-card">
                 <img src="<%=productsDTO.getImage()%>" alt="Product Image">
@@ -133,8 +156,9 @@
                 <p><strong>Category : </strong><%=productsDTO.getCategories().getCategoryName()%></p>
             </div>
         </div>
-        <%}%>
+        <% } %>
     </div>
+
     <%
         }
     %>

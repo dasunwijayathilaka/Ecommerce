@@ -41,7 +41,7 @@
         }
 
         .login-title {
-            color: #e6a80f;
+            color: #000000;
             font-weight: bold;
             text-align: center;
             margin-bottom: 30px;
@@ -66,7 +66,7 @@
         }
 
         .login-btn {
-            background-color: #e6a80f;
+            background-color: #05ffc5;
             color: white;
             border: none;
             width: 100%;
@@ -78,13 +78,13 @@
         }
 
         .login-btn:hover {
-            background-color: #d99b0e;
+            background-color: #11d13b;
             transform: scale(1.05);
         }
 
         .back-btn {
             font-size: 24px;
-            color: #e6a80f;
+            color: #05ffc5;
             cursor: pointer;
             position: absolute; /* Ensures it stays in the top-left corner */
             top: 20px; /* Positions it at the top */
@@ -93,7 +93,7 @@
         }
 
         .back-btn:hover {
-            color: #d99b0e;
+            color: #0cea3d;
             transform: translateX(-5px);
         }
 
@@ -137,7 +137,7 @@
 <!-- Main Container -->
 <div class="container">
     <div class="back d-flex justify-content-start mb-3 position-absolute">
-        <a href="/E_Commerce_war_exploded/index" class="back-btn">&larr;</a>
+        <a href="/E_Commerce_war_exploded/index" class="back-btn">×</a>
     </div>
 
     <!-- Centered Login Box -->

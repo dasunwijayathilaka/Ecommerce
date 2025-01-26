@@ -28,7 +28,7 @@
 
         /* Title Styling */
         .manage-title {
-            color: #e6a80f;
+            color: #000000;
             font-weight: bold;
             font-size: 2rem;
             text-align: center;
@@ -46,7 +46,7 @@
         }
 
         .table th {
-            background-color: #e6a80f;
+            background-color: #13dc3f;
             color: #fff;
             font-size: 1rem;
             text-align: left;
@@ -67,7 +67,7 @@
         /* Back Button Styling */
         .back-btn {
             font-size: 24px;
-            color: #e6a80f;
+            color: #05ffc5;
             cursor: pointer;
             position: absolute;
             top: 2%;
@@ -77,12 +77,12 @@
 
         .back-btn:hover {
             transform: scale(1.1);
-            color: #d8950e;
+            color: #11d13b;
         }
 
         /* Manage Button Styling */
         .manage-btn {
-            background-color: #e6a80f;
+            background-color: #05ffc5;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -94,7 +94,7 @@
         }
 
         .manage-btn:hover {
-            background-color: #d8950e;
+            background-color: #1af44a;
             transform: scale(1.05);
         }
 
@@ -163,7 +163,7 @@
 
 </head>
 <body>
-<a href="/E_Commerce_war_exploded/index" class="back-btn">&larr;</a>
+<a href="/E_Commerce_war_exploded/index" class="back-btn">×</a>
 <div class="container mt-5">
     <div class="row mb-4">
         <div class="col-12 text-center">

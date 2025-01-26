@@ -15,63 +15,97 @@
     <style>
         body {
             background: linear-gradient(135deg, #00b4d8, #0077b6, #023e8a); /* Gradient with teal, blue, and deep navy */
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            transition: background-color 0.3s ease-in-out;
+            position: relative;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background for the form */
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 900px; /* Limit the width for larger screens */
         }
 
         .manage-title {
-            color: #e6a80f;
+            color: #020100;
             font-weight: bold;
             margin-bottom: 20px;
-            font-size: 28px;
-            animation: fadeIn 1s ease-in-out;
+            font-size: 1.8rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: fadeIn 1s ease;
         }
 
         .form-control {
             background-color: #eaeaea;
             border: 1px solid #ccc;
-            padding: 12px;
-            margin-bottom: 20px;
+            padding: 10px;
             border-radius: 5px;
-            font-size: 16px;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .form-control:focus {
-            border-color: #e6a80f;
-            box-shadow: 0 0 5px rgba(230, 168, 15, 0.6);
+        .form-control:focus, .form-select:focus {
+            background-color: #ffffff;
+            box-shadow: 0 0 5px rgb(9, 154, 41);
             outline: none;
         }
 
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
         .table thead {
-            background-color: #e6a80f;
+            background-color: #04a327;
             color: white;
-            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
         }
 
         .table tbody tr:hover {
-            background-color: #f2f2f2;
-            cursor: pointer;
-            transform: scale(1.02);
-            transition: transform 0.3s ease, background-color 0.3s ease;
+            background-color: rgba(230, 168, 15, 0.1); /* Subtle row hover effect */
         }
 
         .btn-primary {
-            background-color: #e6a80f;
+            background-color: #05ffc5;
             border: none;
-            padding: 12px 20px;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
             border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
         }
 
         .btn-primary:hover {
-            background-color: #d99b0e;
-            transform: scale(1.05);
-            opacity: 0.9;
+            background-color: #079826;
+            transform: scale(1.05); /* Slight scale animation */
+        }
+
+        .btn-danger {
+            background-color: #e60000;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-danger:hover {
+            background-color: #c70000;
         }
 
         .back-btn {
@@ -81,31 +115,58 @@
             position: absolute;
             top: 2%;
             left: 2%;
-            transition: transform 0.3s ease, color 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
         .back-btn:hover {
-            color: #d99b0e;
-            transform: translateX(-5px);
+            color: #d8950e;
+            transform: scale(1.1); /* Hover effect for back button */
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            border: none;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         @keyframes fadeIn {
-            0% {
+            from {
                 opacity: 0;
-                transform: translateY(-20px);
+                transform: translateY(-10px);
             }
-            100% {
+            to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-    </style>
 
+        @media (max-width: 767px) {
+            .manage-title {
+                font-size: 1.5rem;
+            }
+
+            .form-control, .form-select {
+                padding: 8px;
+            }
+
+            .btn-primary {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+
+            .back-btn {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
+
+
 <body>
 <a href="/E_Commerce_war_exploded/manageCustomers?message=" class="back-btn">&larr;</a>
-<div class="container mt-4">
-
+<div class="container">
     <h2 class="manage-title text-center">Update Categories</h2>
 
     <!-- Form Inputs -->
@@ -114,7 +175,7 @@
             <input class="form-control me-2" type="search" placeholder="Search" id="search-input">
             <button class="btn btn-primary" id="search-button" type="button">Search</button>
         </form>
-        <form action="/E_Commerce_war_exploded/updateCategories" method="post" >
+        <form action="/E_Commerce_war_exploded/updateCategories" method="post">
             <input class="form-control me-2" type="search" placeholder="Search" name="search" id="disable-search-input">
             <div class="mb-3">
                 <label for="categoryName" class="form-label">Category Name</label>

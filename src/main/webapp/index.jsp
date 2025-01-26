@@ -50,7 +50,7 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #e6a80f;
+      background-color: #05ffc5;
       border: none;
       border-radius: 50%;
       padding: 15px;
@@ -86,12 +86,12 @@
     }
 
     .dropdown-item:hover {
-      background-color: #e6a80f;
+      background-color: #11d13b;
       color: white;
     }
 
     .dropdown-toggle {
-      background-color: #e6a80f !important;
+      background-color: #11d13b !important;
       color: white !important;
       border: none;
       padding: 10px 15px;
@@ -101,7 +101,7 @@
     }
 
     .dropdown-toggle:hover {
-      background-color: #e6a80f !important;
+      background-color: #11d13b !important;
     }
 
     /* Dark Theme Styles */
@@ -143,7 +143,7 @@
 
     /* Search Bar */
     #search-input {
-      width: 700px; /* Wider search bar */
+      width: 900px; /* Wider search bar */
       border: 2px solid #ddd; /* Subtle border */
       transition: border-color 0.3s ease, box-shadow 0.3s ease;
     }
@@ -151,21 +151,21 @@
     /* Focus Effect on Search Bar */
     #search-input:focus {
       outline: none;
-      border-color: #e6a80f;
-      box-shadow: 0 0 10px rgba(230, 168, 15, 0.6);
+      border-color: #11d13b;
+      box-shadow: 0 0 10px rgb(13, 112, 36);
     }
 
     /* Buttons General */
     .btn {
-      background-color: #e6a80f; /* Gold color */
+      background-color: #05ffc5; /* Gold color */
       border: none;
-      color: white;
+      color: #000000;
       transition: background-color 0.3s ease;
     }
 
     /* Hover Effect for Buttons */
     .btn:hover {
-      background-color: #f7b731; /* Slightly lighter shade */
+      background-color: #11d13b; /* Slightly lighter shade */
     }
 
     .product-card {
@@ -207,12 +207,12 @@
 
     .price {
       font-size: 1.1rem;
-      color: #ff5722;
+      color: #000000;
       margin: 10px 0;
     }
 
     .star-rating {
-      color: #ffd700;
+      color: #1cf44d;
       font-size: 1.1rem;
     }
 

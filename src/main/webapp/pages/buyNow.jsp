@@ -25,7 +25,7 @@
         }
 
         .order-card {
-            border: 2px solid #e6a80f;
+            border: 2px solid #11d13b;
             border-radius: 10px;
             padding: 15px;
             margin-bottom: 20px;
@@ -49,7 +49,7 @@
         }
 
         .order-summary {
-            border: 2px solid #e6a80f;
+            border: 2px solid #04731d;
             border-radius: 10px;
             padding: 10px 15px;
             font-size: 0.9rem;
@@ -64,7 +64,7 @@
         }
 
         .btn-buy {
-            background-color: #e6a80f;
+            background-color: #cd0b46;
             color: white;
             border-radius: 5px;
             width: 100%;
@@ -76,13 +76,13 @@
         }
 
         .btn-buy:hover {
-            background-color: #d99b0e;
+            background-color: #e6a80f;
             transform: scale(1.05);
         }
 
         .back-btn {
             font-size: 24px;
-            color: #e6a80f;
+            color: #05ffc5;
             cursor: pointer;
             position: absolute;
             top: 2%;
@@ -91,7 +91,7 @@
         }
 
         .back-btn:hover {
-            color: #d99b0e;
+            color: #11d13b;
             transform: translateX(-5px);
         }
 
@@ -134,8 +134,9 @@
 <div class="container mt-5">
     <!-- Back Button -->
     <div class="back d-flex justify-content-start mb-3 position-absolute">
-        <a href="/E_Commerce_war_exploded/index" class="back-btn">&larr;</a>
+        <a href="/E_Commerce_war_exploded/index" class="back-btn">×</a>
     </div>
+
 
     <!-- Title -->
     <h3 class="text-purple">Order</h3>

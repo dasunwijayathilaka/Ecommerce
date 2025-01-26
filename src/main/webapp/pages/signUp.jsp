@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #8494af;
+            background: linear-gradient(135deg, #00b4d8, #0077b6, #023e8a); /* Gradient with teal, blue, and deep navy */
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -25,7 +25,7 @@
 
         .signup-box {
             width: 700px; /* Increased width for more space */
-            border: 2px solid #e6a80f;
+            border: 2px solid #11d13b;
             border-radius: 15px;
             padding: 40px; /* Adjusted padding for balance */
             background-color: white;
@@ -35,7 +35,7 @@
         }
 
         .signup-title {
-            color: #e6a80f;
+            color: #000000;
             font-weight: bold;
             margin-bottom: 30px;
             font-size: 28px; /* Larger font size */
@@ -53,12 +53,12 @@
         }
 
         .form-control:focus {
-            border-color: #e6a80f;
-            box-shadow: 0 0 5px rgba(230, 168, 15, 0.6);
+            border-color: #11d13b;
+            box-shadow: 0 0 5px rgb(11, 140, 39);
         }
 
         .signup-btn {
-            background: linear-gradient(135deg, #00b4d8, #0077b6, #023e8a); /* Gradient with teal, blue, and deep navy */
+            background: #05ffc5;
             color: white;
             border: none;
             width: 100%;
@@ -70,13 +70,13 @@
         }
 
         .signup-btn:hover {
-            background-color: #d99b0e;
+            background-color: #11d13b;
             transform: scale(1.05);
         }
 
         .back-btn {
             font-size: 24px;
-            color: #e6a80f;
+            color: #05ffc5;
             cursor: pointer;
             position: absolute;
             top: 10px;
@@ -85,7 +85,7 @@
         }
 
         .back-btn:hover {
-            color: #d99b0e;
+            color: #0ef340;
             transform: translateX(-5px);
         }
 
@@ -107,7 +107,7 @@
 <!-- Back Button -->
 <div class="container">
     <div class="d-flex justify-content-start mb-3">
-        <a href="/E_Commerce_war_exploded/index" class="back-btn">&larr;</a>
+        <a href="/E_Commerce_war_exploded/index" class="back-btn">×</a>
     </div>
 
     <!-- Sign Up Form -->

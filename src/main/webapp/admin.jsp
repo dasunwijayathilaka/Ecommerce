@@ -28,7 +28,7 @@
         .login-box {
             width: 600px; /* Width of the form */
             height: 600px; /* Height of the form */
-            border: 2px solid #05ffc5;
+            border: 2px solid #f6b40f;
             border-radius: 15px;
             padding: 30px;
             background-color: #ffffff;
@@ -42,7 +42,7 @@
         }
 
         .login-title {
-            color: #e6a80f;
+            color: #000000;
             font-weight: bold;
             text-align: center;
             margin-bottom: 20px;
@@ -66,7 +66,7 @@
         }
 
         .login-btn {
-            background-color: #e6a80f;
+            background-color: #05ffc5;
             color: white;
             border: none;
             width: 100%;
@@ -78,22 +78,23 @@
         }
 
         .login-btn:hover {
-            background-color: #d99b0e;
+            background-color: #11d13b;
             transform: scale(1.05);
         }
 
         .back-btn {
             font-size: 24px;
-            color: #e6a80f;
+            color: #05ffc5;
             cursor: pointer;
             position: absolute;
-            top: 2%;
-            left: 2%;
+            top: 2%;  /* Adjust the distance from the top */
+            left: 2%;  /* Adjust the distance from the left */
+            z-index: 10;  /* Ensure it stays on top of other elements */
             transition: transform 0.3s ease, color 0.3s ease;
         }
 
         .back-btn:hover {
-            color: #d99b0e;
+            color: #11d13b;
             transform: translateX(-5px);
         }
 
@@ -136,7 +137,7 @@
 <!-- Main Container -->
 <div class="container">
     <div class="back d-flex justify-content-start mb-3 position-absolute">
-        <a href="index.jsp" class="back-btn">&larr;</a>
+        <a href="index.jsp" class="back-btn">×</a>
     </div>
 
     <!-- Centered Login Box -->

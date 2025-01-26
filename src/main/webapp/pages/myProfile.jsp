@@ -38,7 +38,7 @@
 
         /* Profile Title */
         .profile-title {
-            color: #e6a80f;
+            color: #000000;
             font-weight: bold;
             font-size: 1.8rem;
             margin-bottom: 20px;
@@ -58,12 +58,12 @@
 
         .form-control:focus {
             outline: none;
-            box-shadow: 0 0 5px rgba(230, 168, 15, 0.7);
+            box-shadow: 0 0 5px rgb(19, 234, 65);
         }
 
         /* Buttons */
         .btn-primary {
-            background-color: #e6a80f;
+            background-color: #05ffc5;
             border: none;
             color: white;
             font-size: 1rem;
@@ -75,14 +75,14 @@
         }
 
         .btn-primary:hover {
-            background-color: #d8950e;
+            background-color: #0fe63e;
             transform: scale(1.05);
         }
 
         /* Back Button */
         .back-btn {
             font-size: 24px;
-            color: #e6a80f;
+            color: #05ffc5;
             cursor: pointer;
             position: absolute;
             top: 2%;
@@ -91,7 +91,7 @@
         }
 
         .back-btn:hover {
-            color: #d8950e;
+            color: #0df440;
             transform: scale(1.1);
         }
 
@@ -128,7 +128,7 @@
 <body>
 <div class="profile-container">
     <div class="back d-flex justify-content-start mb-3 position-absolute">
-        <a href="/E_Commerce_war_exploded/index" class="back-btn">&larr;</a>
+        <a href="/E_Commerce_war_exploded/index" class="back-btn">×</a>
     </div>
     <h1 class="profile-title">My Profile</h1>
 

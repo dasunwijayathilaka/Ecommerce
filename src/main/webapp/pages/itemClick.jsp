@@ -28,7 +28,7 @@
             max-width: 800px; /* Limit the container width for better readability */
             margin: 20px auto;
             background: #ffffff; /* Add a card-like background */
-            border: 2px solid #e6a80f;
+            border: 2px solid #078c25;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
         }
@@ -47,14 +47,14 @@
         .price {
             font-size: 2rem; /* Make the price more prominent */
             font-weight: bold;
-            color: #e6a80f;
+            color: #1ff14c;
             text-align: center;
             margin: 20px 0;
             animation: fadeIn 1s ease; /* Add an entry animation */
         }
 
         .star-rating {
-            color: #e6a80f;
+            color: #d405ff;
             font-size: 1.2rem;
             display: flex;
             justify-content: center;
@@ -78,7 +78,7 @@
         }
 
         .btn-secondary {
-            background-color: #e6a80f;
+            background-color: #36a5ef;
             color: #ffffff;
             font-weight: bold;
             padding: 10px 20px;
@@ -89,7 +89,7 @@
         }
 
         .btn-secondary:hover {
-            background-color: #d8950e; /* Darker shade on hover */
+            background-color: #ba09df; /* Darker shade on hover */
             transform: scale(1.05);
         }
 
@@ -105,28 +105,28 @@
         }
 
         .quantity-control button:hover {
-            background-color: #e6a80f;
+            background-color: #8494af;
             color: #ffffff;
         }
 
         textarea {
             width: 100%;
             padding: 10px;
-            border: 2px solid #e6a80f;
+            border: 2px solid #05ffc5;
             border-radius: 10px;
             font-size: 1rem;
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
 
         textarea:focus {
-            border-color: #d8950e;
-            box-shadow: 0 0 8px rgba(230, 168, 15, 0.5);
+            border-color: #11d13b;
+            box-shadow: 0 0 8px rgb(12, 143, 41);
             outline: none;
         }
 
         .back-btn {
             font-size: 24px;
-            color: #e6a80f;
+            color: #05ffc5;
             cursor: pointer;
             position: absolute;
             top: 20px;
@@ -135,7 +135,7 @@
         }
 
         .back-btn:hover {
-            color: #d8950e;
+            color: #117527;
             transform: scale(1.1);
         }
 
@@ -174,7 +174,7 @@
 </head>
 <body>
 <div class="back d-flex justify-content-start mb-3 position-absolute">
-    <a href="/E_Commerce_war_exploded/index" class="back-btn">&larr;</a>
+    <a href="/E_Commerce_war_exploded/index" class="back-btn">×</a>
 </div>
 
 <%! public String changeImagePath(String path) {

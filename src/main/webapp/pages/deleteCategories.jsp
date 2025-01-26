@@ -19,10 +19,11 @@
             margin: 0;
             padding: 0;
             position: relative;
+            height: 100vh; /* Full viewport height */
         }
 
         .manage-title {
-            color: #e6a80f;
+            color: #020100;
             font-weight: bold;
             margin-bottom: 20px;
             font-size: 1.8rem;
@@ -42,7 +43,7 @@
 
         .form-control:focus, .form-select:focus {
             background-color: #ffffff;
-            box-shadow: 0 0 5px rgba(230, 168, 15, 0.5);
+            box-shadow: 0 0 5px rgb(9, 154, 41);
             outline: none;
         }
 
@@ -54,7 +55,7 @@
         }
 
         .table thead {
-            background-color: #e6a80f;
+            background-color: #04a327;
             color: white;
             text-transform: uppercase;
             font-size: 0.9rem;
@@ -66,7 +67,7 @@
         }
 
         .btn-primary {
-            background-color: #e6a80f;
+            background-color: #05ffc5;
             border: none;
             color: white;
             font-weight: bold;
@@ -77,8 +78,22 @@
         }
 
         .btn-primary:hover {
-            background-color: #d8950e;
+            background-color: #079826;
             transform: scale(1.05); /* Slight scale animation */
+        }
+
+        .btn-danger {
+            background-color: #e60000;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-danger:hover {
+            background-color: #c70000;
         }
 
         .back-btn {
@@ -94,6 +109,14 @@
         .back-btn:hover {
             color: #d8950e;
             transform: scale(1.1); /* Hover effect for back button */
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            border: none;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         @keyframes fadeIn {
@@ -128,15 +151,16 @@
     </style>
 
 </head>
+
+
 <body>
 <a href="/E_Commerce_war_exploded/manageCustomers?message=" class="back-btn">&larr;</a>
-<div class="container mt-4">
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="card col-lg-8">
+        <h2 class="manage-title text-center">Delete Categories</h2>
 
-    <h2 class="manage-title text-center">Delete Categories</h2>
-
-    <!-- Form Inputs -->
-    <div class="col-lg-8">
-        <form class="d-flex">
+        <!-- Form Inputs -->
+        <form class="d-flex mb-3">
             <input class="form-control me-2" type="search" placeholder="Search" id="search-input">
             <button class="btn btn-primary" id="search-button" type="button">Search</button>
         </form>
@@ -150,6 +174,11 @@
         </form>
     </div>
 </div>
+
+
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../js/jquery-3.7.1.min.js"></script>
