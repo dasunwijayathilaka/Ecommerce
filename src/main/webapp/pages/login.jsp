@@ -14,30 +14,44 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f5f5f5;
+            background-color: #64748b; /* Adjusted background color for visibility */
             height: 100vh;
+            margin: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center; /* Centers the form on the screen */
+            position: relative; /* Allows absolute positioning of the back button */
         }
-        /*hhhh*/
+
         .login-box {
+            width: 600px; /* Width of the form */
+            height: 600px; /* Height of the form */
             border: 2px solid #e6a80f;
             border-radius: 15px;
             padding: 30px;
-            background-color: white;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow for emphasis */
+            justify-content: center;
+            align-items: center;
+            position: relative;
         }
 
         .login-title {
             color: #e6a80f;
             font-weight: bold;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 28px;
         }
 
         .form-control {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
             background-color: #eaeaea;
+            font-size: 16px;
         }
 
         .login-btn {
@@ -45,23 +59,30 @@
             color: white;
             border: none;
             width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
         }
 
         .login-btn:hover {
-            background-color: #e6a80f;
+            background-color: #d99b0e;
         }
 
         .back-btn {
             font-size: 24px;
             color: #e6a80f;
             cursor: pointer;
+            position: absolute; /* Ensures it stays in the top-left corner */
+            top: 20px; /* Positions it at the top */
+            left: 20px; /* Positions it on the left */
         }
 
-        .back{
-            top: 2%;
-            left: 2%;
+        .back-btn:hover {
+            color: #d99b0e;
         }
     </style>
+
 </head>
 <body>
 <!-- Main Container -->

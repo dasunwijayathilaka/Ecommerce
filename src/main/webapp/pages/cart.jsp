@@ -17,63 +17,122 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #EEEEEE;
+            background: linear-gradient(135deg, #f5f5f5, #d6d6d6); /* Gradient background */
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            font-family: Arial, sans-serif;
         }
+
         .cart-card {
             border: 2px solid #e6a80f;
             border-radius: 10px;
             padding: 15px;
             margin-bottom: 20px;
+            width: 50%; /* Adjust width for desktop */
+            background: white;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .cart-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add hover effect */
+        }
+
         .cart-card img {
             width: 100px;
             border-radius: 10px;
             position: relative;
             left: 5%;
         }
-        .cart-card>div:nth-child(3) {
+
+        .cart-card > div:nth-child(3) {
             position: relative;
             left: 5%;
         }
+
         .order-summary {
-            background: #EEEEEE;
+            background: #ffffff;
             border: 2px solid #e6a80f;
             border-radius: 10px;
             padding: 15px;
             color: black;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .order-summary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add hover effect */
+        }
+
         .checkout-btn {
             background-color: #e6a80f;
             color: white;
             font-weight: bold;
             border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
+
+        .checkout-btn:hover {
+            background-color: #d8950e;
+            transform: scale(1.05); /* Button hover animation */
+        }
+
         .icon-btn {
             border: none;
             background: none;
             font-size: 1.2rem;
+            color: #e6a80f;
+            cursor: pointer;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .icon-btn:hover {
+            color: #d8950e;
+            transform: scale(1.2); /* Icon hover animation */
         }
 
         .back-btn {
             font-size: 24px;
             color: #e6a80f;
             cursor: pointer;
-        }
-
-        .back{
+            position: absolute;
             top: 2%;
             left: 2%;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
-        @media (max-width:767px) {
-            .cart-card>input:nth-child(1){
+        .back-btn:hover {
+            color: #d8950e;
+            transform: scale(1.1); /* Back button hover animation */
+        }
+
+        @media (max-width: 767px) {
+            .cart-card {
+                width: 90%; /* Adjust width for mobile */
+            }
+
+            .cart-card > input:nth-child(1) {
                 top: 0;
                 bottom: 0;
                 left: 5%;
                 margin: auto;
             }
+
+            .back-btn {
+                font-size: 20px;
+            }
         }
     </style>
+
 </head>
 <body>
 <div class="back d-flex justify-content-start mb-3 position-absolute">

@@ -14,86 +14,180 @@
     <title>Manage Products</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
+        /* General Body Styling */
         body {
-            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #f7f7f7, #eaeaea); /* Subtle gradient for a clean look */
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
-        .text-purple {
-            color: #e6a80f; /* Bootstrap purple shade */
+        /* Navbar Styling */
+        .navbar {
+            border-bottom: 2px solid #e6a80f;
+            padding: 10px 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideDown 1s ease;
         }
 
         .navbar .dropdown-menu {
             border: none;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease;
         }
 
         .navbar .dropdown-menu a {
             color: #e6a80f;
             font-weight: 500;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .navbar .dropdown-menu a:hover {
             background-color: #f8f9fa;
+            color: #d8950e;
         }
 
-        .navbar{
-            border-bottom: #e6a80f solid 2px;
-        }
-
-        .form-control {
-            background-color: #eaeaea;
-        }
-
-        .text-purple {
-            color: #e6a80f;
-        }
-
-        .table thead {
-            background-color: #e6a80f;
-            color: white;
-        }
-
-        .form-container label {
-            font-weight: bold;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-
+        /* Header Styling */
         .header {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: bold;
             color: #e6a80f;
-            margin: 20px 0;
+            text-align: center;
+            margin: 30px 0;
+            animation: fadeIn 1s ease;
         }
 
-        .search-container input {
-            border: 1px solid #ccc;
-            border-radius: 20px;
-            padding: 5px 15px;
-            width: 250px;
+        /* Form and Input Styling */
+        .form-control, .search-container input {
+            background-color: #f0f0f0;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            padding: 10px 15px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-control:focus, .search-container input:focus {
+            border-color: #e6a80f;
+            box-shadow: 0 0 8px rgba(230, 168, 15, 0.5);
+            outline: none;
         }
 
         .search-container button {
             border: none;
             background-color: #e6a80f;
-            color: #fff;
+            color: white;
             border-radius: 50%;
-            padding: 8px 12px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .search-container button:hover {
+            transform: scale(1.1); /* Slight zoom */
+            background-color: #d8950e;
+        }
+
+        /* Table Styling */
+        .table {
+            width: 100%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease;
         }
 
         .table th {
             background-color: #e6a80f;
-            color: #fff;
+            color: white;
+            font-size: 1rem;
+            text-align: left;
+            padding: 10px;
         }
 
         .table td {
             background-color: #f8f9fa;
+            padding: 10px;
+            transition: background-color 0.3s ease;
         }
 
+        .table tbody tr:hover td {
+            background-color: #f0f0f0;
+        }
+
+        /* Image Styling */
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: #e6a80f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #d8950e;
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .header {
+                font-size: 2rem;
+            }
+
+            .table {
+                font-size: 0.9rem;
+            }
+
+            .btn-primary {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+
+            .navbar .dropdown-menu {
+                animation: none; /* Remove animation for small devices */
+            }
+        }
     </style>
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">

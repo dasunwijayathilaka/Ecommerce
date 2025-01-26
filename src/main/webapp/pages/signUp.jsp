@@ -15,30 +15,39 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f5f5f5;
+            background-color: #8494af;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: 0;
         }
 
         .signup-box {
+            width: 700px; /* Increased width for more space */
             border: 2px solid #e6a80f;
             border-radius: 15px;
-            padding: 30px;
+            padding: 40px; /* Adjusted padding for balance */
             background-color: white;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center-align text and form */
         }
 
         .signup-title {
             color: #e6a80f;
             font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 28px; /* Larger font size */
         }
 
         .form-control {
+            width: 100%;
+            padding: 15px; /* Larger padding for inputs */
+            margin-bottom: 20px; /* Space between inputs */
+            border: 1px solid #ddd;
+            border-radius: 5px;
             background-color: #eaeaea;
+            font-size: 16px; /* Larger font size for inputs */
         }
 
         .signup-btn {
@@ -46,16 +55,27 @@
             color: white;
             border: none;
             width: 100%;
+            padding: 15px; /* Increased button size */
+            border-radius: 5px;
+            font-size: 18px; /* Larger button font */
+            cursor: pointer;
         }
 
         .signup-btn:hover {
-            background-color: #e6a80f;
+            background-color: #d99b0e;
         }
 
         .back-btn {
             font-size: 24px;
             color: #e6a80f;
             cursor: pointer;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .back-btn:hover {
+            color: #d99b0e;
         }
     </style>
 </head>

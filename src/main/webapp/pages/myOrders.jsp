@@ -18,25 +18,53 @@
     <title>My Orders</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
+        /* General Body Styling */
         body {
-            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #f8f9fa, #e6e6e6);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
+        /* Title Styling */
         .manage-title {
             color: #e6a80f;
             font-weight: bold;
-            margin-bottom: 20px;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease;
+        }
+
+        /* Table Styling */
+        .table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: slideUp 0.8s ease;
         }
 
         .table th {
             background-color: #e6a80f;
             color: #fff;
+            font-size: 1rem;
+            text-align: left;
+            padding: 12px;
         }
 
         .table td {
             background-color: #f8f9fa;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s ease;
         }
 
+        .table tbody tr:hover td {
+            background-color: #f0f0f0;
+        }
+
+        /* Back Button Styling */
         .back-btn {
             font-size: 24px;
             color: #e6a80f;
@@ -44,25 +72,95 @@
             position: absolute;
             top: 2%;
             left: 2%;
+            transition: transform 0.3s ease, color 0.3s ease;
         }
 
+        .back-btn:hover {
+            transform: scale(1.1);
+            color: #d8950e;
+        }
+
+        /* Manage Button Styling */
         .manage-btn {
             background-color: #e6a80f;
             color: white;
-        }
-        .manage-btn:hover {
-            background-color: #e6a80f;
-        }
-        .details-box {
-            background-color: #e9ecef;
-            padding: 15px;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
             border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
+
+        .manage-btn:hover {
+            background-color: #d8950e;
+            transform: scale(1.05);
+        }
+
+        /* Details Box Styling */
+        .details-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease;
+        }
+
+        /* Image Container Styling */
         .image-container img {
             max-width: 100%;
-            border-radius: 5px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .manage-title {
+                font-size: 1.5rem;
+            }
+
+            .table th, .table td {
+                font-size: 0.9rem;
+            }
+
+            .manage-btn {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
         }
     </style>
+
 </head>
 <body>
 <a href="/E_Commerce_war_exploded/index" class="back-btn">&larr;</a>

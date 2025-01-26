@@ -12,7 +12,7 @@
   <style>
     /* Light Theme Styles (Default) */
     body {
-      background-color: #EEEEEE;
+      background-color: #ffffff;
       transition: background-color 0.5s, color 0.5s;
     }
 

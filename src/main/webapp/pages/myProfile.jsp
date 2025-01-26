@@ -13,39 +13,117 @@
     <title>My Profile</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
+        /* General Body Styling */
         body {
-            background-color: #EEEEEE;
+            background: linear-gradient(135deg, #f8f9fa, #e6e6e6);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
+
+        /* Profile Container */
         .profile-container {
             max-width: 800px;
-            margin: auto;
+            width: 100%;
             background: white;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.8s ease;
         }
+
+        /* Profile Title */
         .profile-title {
             color: #e6a80f;
             font-weight: bold;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
         }
+
+        /* Form Controls */
         .form-control {
-            background-color: #e0e0e0;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            transition: box-shadow 0.3s ease;
         }
+
+        .form-control:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(230, 168, 15, 0.7);
+        }
+
+        /* Buttons */
         .btn-primary {
             background-color: #e6a80f;
             border: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
+
+        .btn-primary:hover {
+            background-color: #d8950e;
+            transform: scale(1.05);
+        }
+
+        /* Back Button */
         .back-btn {
             font-size: 24px;
             color: #e6a80f;
             cursor: pointer;
-        }
-
-        .back{
+            position: absolute;
             top: 2%;
             left: 2%;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: #d8950e;
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .profile-container {
+                padding: 20px;
+            }
+
+            .profile-title {
+                font-size: 1.5rem;
+            }
+
+            .btn-primary {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
+
 </head>
 <body>
 <div class="profile-container">

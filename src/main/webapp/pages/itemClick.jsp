@@ -17,48 +17,160 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #EEEEEE;
+            background: linear-gradient(135deg, #e6e6e6, #f9f9f9); /* Smooth gradient for the background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
+
         .product-container {
             padding: 30px;
+            max-width: 800px; /* Limit the container width for better readability */
+            margin: 20px auto;
+            background: #ffffff; /* Add a card-like background */
+            border: 2px solid #e6a80f;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
         }
+
         .product-image {
             max-width: 100%;
             border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
         }
+
+        .product-image:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
         .price {
-            font-size: 1.5rem;
+            font-size: 2rem; /* Make the price more prominent */
             font-weight: bold;
             color: #e6a80f;
+            text-align: center;
+            margin: 20px 0;
+            animation: fadeIn 1s ease; /* Add an entry animation */
         }
+
         .star-rating {
             color: #e6a80f;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
         }
+
         .btn-primary {
             background-color: #05ffc5;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px 20px;
             border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
+
+        .btn-primary:hover {
+            background-color: #03c9a3; /* Darker shade on hover */
+            transform: scale(1.05); /* Slight zoom */
+        }
+
         .btn-secondary {
             background-color: #e6a80f;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px 20px;
             border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
+
+        .btn-secondary:hover {
+            background-color: #d8950e; /* Darker shade on hover */
+            transform: scale(1.05);
+        }
+
         .quantity-control button {
+            background-color: #ffffff;
+            color: #333;
             border: 1px solid #000;
+            padding: 5px 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
+
+        .quantity-control button:hover {
+            background-color: #e6a80f;
+            color: #ffffff;
+        }
+
         textarea {
+            width: 100%;
+            padding: 10px;
             border: 2px solid #e6a80f;
             border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
+
+        textarea:focus {
+            border-color: #d8950e;
+            box-shadow: 0 0 8px rgba(230, 168, 15, 0.5);
+            outline: none;
+        }
+
         .back-btn {
             font-size: 24px;
             color: #e6a80f;
             cursor: pointer;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
-        .back{
-            top: 2%;
-            left: 2%;
+
+        .back-btn:hover {
+            color: #d8950e;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .product-container {
+                padding: 15px;
+                margin: 10px;
+            }
+
+            .price {
+                font-size: 1.5rem;
+            }
+
+            .btn-primary, .btn-secondary {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+
+            .back-btn {
+                font-size: 20px;
+            }
         }
     </style>
+
 </head>
 <body>
 <div class="back d-flex justify-content-start mb-3 position-absolute">

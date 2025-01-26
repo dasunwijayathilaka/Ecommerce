@@ -14,19 +14,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #64748b, #1e293b); /* Gradient colors */
             height: 100vh;
+            margin: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center; /* Centers the form on the screen */
+            position: relative; /* Allows absolute positioning of the back button */
         }
 
+
         .login-box {
-            border: 2px solid #e6a80f;
+            width: 600px; /* Width of the form */
+            height: 600px; /* Height of the form */
+            border: 2px solid #05ffc5;
             border-radius: 15px;
             padding: 30px;
-            background-color: white;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow for emphasis */
+            justify-content: center;
+            align-items: center;
+            position: relative;
         }
 
         .login-title {

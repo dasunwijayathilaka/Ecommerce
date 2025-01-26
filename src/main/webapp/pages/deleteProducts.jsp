@@ -13,43 +13,149 @@
     <title>Delete Products</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
+        /* Body Styles */
         body {
-            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #f5f5f5, #eaeaea); /* Smooth gradient background */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
+        /* Title Styling */
         .manage-title {
             color: #e6a80f;
             font-weight: bold;
             margin-bottom: 20px;
+            font-size: 2rem;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
         }
 
-        .form-control, .form-select {
+        /* Form Styling */
+        .form-control,
+        .form-select {
             background-color: #eaeaea;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #e6a80f;
+            box-shadow: 0 0 8px rgba(230, 168, 15, 0.5);
+            outline: none;
+        }
+
+        /* Table Styling */
+        .table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .table thead {
             background-color: #e6a80f;
             color: white;
+            font-size: 1.2rem;
+            animation: slideDown 1s ease;
         }
 
+        .table tbody tr {
+            transition: background-color 0.3s ease;
+        }
+
+        .table tbody tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        /* Button Styling */
         .btn-primary {
             background-color: #e6a80f;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
             border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, opacity 0.3s ease;
         }
 
         .btn-primary:hover {
-            opacity: 0.9;
+            transform: scale(1.05); /* Slight zoom */
+            opacity: 0.9; /* Subtle hover effect */
         }
 
+        /* Back Button Styling */
         .back-btn {
             font-size: 24px;
             color: #e6a80f;
             cursor: pointer;
             position: absolute;
-            top: 2%;
-            left: 2%;
+            top: 20px;
+            left: 20px;
+            transition: transform 0.3s ease, color 0.3s ease;
+            animation: fadeInLeft 1s ease;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1); /* Slight zoom */
+            color: #d8950e; /* Darker shade on hover */
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .manage-title {
+                font-size: 1.5rem;
+            }
+
+            .btn-primary {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+
+            .back-btn {
+                font-size: 20px;
+            }
         }
     </style>
+
 </head>
 <body>
 <a href="/E_Commerce_war_exploded/manageCustomers?message=" class="back-btn">&larr;</a>
