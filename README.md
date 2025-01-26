@@ -1,5 +1,8 @@
-YouTube video  -  https://youtu.be/e5Hq2peVeJA?si=4gG6-XcyusqK5L4i
-
+## 🎥 Demo Video
+YouTube video   -  https://youtu.be/e5Hq2peVeJA?si=4gG6-XcyusqK5L4i  -  (The video with the explanation is here, but it was made quickly. This was edited quickly because the mic was off in the 2nd video.)
+---
+---
+YouTube video  -   https://youtu.be/g63tXZfZhiU?si=Mffp9zaGdRD8MncC     -  (The full video is half an hour long, but unfortunately I recorded it with the mic off, but here is the full backend code review and the full frontend UI.)
 
 # I-Dealz 🛒✨
 
@@ -50,12 +53,6 @@ Whether you're a tech enthusiast or a casual shopper, **I-Dealz** brings conveni
 
 ![Screenshot 2025-01-26 234616](https://github.com/user-attachments/assets/417a6dba-5ff5-44c3-8caf-9878f1279221)
 
-
----
-
-## 🎥 Demo Video
-📹 Watch the full demonstration on [YouTube](#)!
-https://youtu.be/e5Hq2peVeJA?si=4gG6-XcyusqK5L4i
 
 ---
 
