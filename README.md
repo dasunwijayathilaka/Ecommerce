@@ -1,8 +1,11 @@
 ## 🎥 Demo Video
-YouTube video   -  https://youtu.be/e5Hq2peVeJA?si=4gG6-XcyusqK5L4i  -  (The video with the explanation is here, but it was made quickly. This was edited quickly because the mic was off in the 2nd video.)
+---
+YouTube video  -  https://youtu.be/e5Hq2peVeJA?si=4gG6-XcyusqK5L4i  - 
+(The video with the explanation is here, but it was made quickly. This was edited quickly because the mic was off in the 2nd video.)
 ---
 ---
-YouTube video  -   https://youtu.be/g63tXZfZhiU?si=Mffp9zaGdRD8MncC     -  (The full video is half an hour long, but unfortunately I recorded it with the mic off, but here is the full backend code review and the full frontend UI.)
+YouTube video  -   https://youtu.be/g63tXZfZhiU?si=Mffp9zaGdRD8MncC     - 
+(The full video is half an hour long, but unfortunately I recorded it with the mic off, but here is the full backend code review and the full frontend UI.)
 
 # I-Dealz 🛒✨
 
