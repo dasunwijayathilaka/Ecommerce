@@ -18,7 +18,7 @@
         }
 
         .manage-title {
-            color: #6a0dad;
+            color: #e6a80f;
             font-weight: bold;
             margin-bottom: 20px;
         }
@@ -28,12 +28,12 @@
         }
 
         .table thead {
-            background-color: #6a0dad;
+            background-color: #e6a80f;
             color: white;
         }
 
         .btn-primary {
-            background-color: #6a0dad;
+            background-color: #e6a80f;
             border: none;
         }
 
@@ -43,7 +43,7 @@
 
         .back-btn {
             font-size: 24px;
-            color: #6a0dad;
+            color: #e6a80f;
             cursor: pointer;
             position: absolute;
             top: 2%;
