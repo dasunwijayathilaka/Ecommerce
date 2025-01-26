@@ -20,7 +20,7 @@
             background-color: #EEEEEE;
         }
         .cart-card {
-            border: 2px solid #6a0dad;
+            border: 2px solid #e6a80f;
             border-radius: 10px;
             padding: 15px;
             margin-bottom: 20px;
@@ -37,13 +37,13 @@
         }
         .order-summary {
             background: #EEEEEE;
-            border: 2px solid #6a0dad;
+            border: 2px solid #e6a80f;
             border-radius: 10px;
             padding: 15px;
             color: black;
         }
         .checkout-btn {
-            background-color: #6a0dad;
+            background-color: #e6a80f;
             color: white;
             font-weight: bold;
             border: none;
@@ -56,7 +56,7 @@
 
         .back-btn {
             font-size: 24px;
-            color: #6a0dad;
+            color: #e6a80f;
             cursor: pointer;
         }
 
