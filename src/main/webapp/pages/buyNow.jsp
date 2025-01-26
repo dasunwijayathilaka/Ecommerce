@@ -3,7 +3,7 @@
 <%@ page import="lk.ijse.ecommerce.entity.Products" %>
 <%@ page import="lk.ijse.ecommerce.controller.LoginServlet" %><%--
   Created by IntelliJ IDEA.
-  User: RedMark
+  User: Dasunwijayathilaka
   Date: 1/22/2025
   Time: 8:24 PM
   To change this template use File | Settings | File Templates.
@@ -21,7 +21,7 @@
         }
 
         .order-card {
-            border: 2px solid #6a0dad;
+            border: 2px solid #e6a80f;
             border-radius: 10px;
             padding: 15px;
             margin-bottom: 20px;
@@ -34,7 +34,7 @@
         }
 
         .order-summary {
-            border: 2px solid #6a0dad;
+            border: 2px solid #e6a80f;
             border-radius: 10px;
             padding: 10px 15px;
             font-size: 0.9rem;
@@ -47,19 +47,19 @@
         }
 
         .btn-buy {
-            background-color: #6a0dad;
+            background-color: #e6a80f;
             color: white;
             border-radius: 5px;
             width: 100%;
         }
 
         .btn-buy:hover {
-            background-color: #6a0dad;
+            background-color: #e6a80f;
         }
 
         .back-btn {
             font-size: 24px;
-            color: #6a0dad;
+            color: #e6a80f;
             cursor: pointer;
         }
         .back{

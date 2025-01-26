@@ -3,7 +3,7 @@
 <%@ page import="lk.ijse.ecommerce.dao.DAOFactory" %>
 <%@ page import="lk.ijse.ecommerce.entity.Products" %><%--
   Created by IntelliJ IDEA.
-  User: RedMark
+  User: Dasunwijayathilaka
   Date: 1/16/2025
   Time: 5:59 PM
   To change this template use File | Settings | File Templates.
