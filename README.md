@@ -23,6 +23,15 @@ Whether you're a tech enthusiast or a casual shopper, **I-Dealz** brings conveni
 
 ---
 
+## 🖼️ Screenvedio
+
+
+https://github.com/user-attachments/assets/18f7a1fe-9f2d-4c10-be41-087e173cc171
+
+
+
+---
+
 ## 🖼️ Screenshots
 ### 📌 
 
